@@ -12,14 +12,8 @@ public class NumeroInteiro {
         System.out.println("O numero da variavel e: " + numero);
         System.out.println("O seu antecessor e: " + (numero -1));
         System.out.println("O seu sucessor e: " + (numero +1));
-     
-        
-        
-        
-        
-        
-        
-        
+
+    mondial.close();
         
     }
     
