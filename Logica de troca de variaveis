@@ -1,0 +1,30 @@
+package troca.de.variaveis;
+
+import java.util.Scanner;
+
+public class TrocaDeVariaveis {
+
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+        
+        System.out.println("Escolha a primeira variavel: ");
+        int primeira = tc.nextInt();
+        System.out.println("Escolha a segunda variavel: ");
+        int segunda = tc.nextInt();
+        
+        System.out.println("Legal, voce fez as suas escolhas");
+        System.out.println("A primeira varivel escolhida era: " + primeira);
+        System.out.println("A segunda variavel escolhida era: " + segunda);
+        
+        System.out.println("Agora vamos trocas as variaveis de lugar?");
+        
+        System.out.println("A Primeira variavel agora e: " + segunda);
+        System.out.println("A Segunda variavel agora e:" + primeira);
+              
+        tc.close();
+        
+        
+        
+    }
+    
+}
