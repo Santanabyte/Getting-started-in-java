@@ -1,0 +1,22 @@
+package media.trimestral;
+
+
+public class MediaTrimestral {
+
+    
+    public static void main(String[] args) {
+       
+      double jan = 15.000;
+      double fev = 23.000;
+      double mar = 17.000;
+      double soma = jan + fev + mar;
+      double media = soma / 3;
+      
+      
+        System.out.println("O gasto total do trimestre foi de: " + soma + " e a sua media foi de " + media);
+      
+      
+        
+    }
+    
+}
