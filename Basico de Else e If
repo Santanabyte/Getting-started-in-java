@@ -1,0 +1,24 @@
+package pratica;
+
+import java.util.Scanner;
+
+public class PRatica {
+      
+    
+    public static void main(String[] args) {
+        int nota;
+        Scanner tc = new Scanner(System.in);  
+        System.out.println("Digite a nota no sistema: ");
+        nota = tc.nextInt();
+        
+        if(nota>= 7){
+            System.out.println("Aluno Aprovado!!");
+        }else{
+            System.out.println("Aluno Reprovado");
+        }
+       
+    
+        
+    }
+    
+}
