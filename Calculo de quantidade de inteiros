@@ -1,0 +1,18 @@
+package salario;
+
+import java.util.Scanner;
+
+public class Salario {
+    
+    public static void main(String[] args) {
+            Scanner tc = new Scanner(System.in);
+        double salario;
+            System.out.println("Digite o salario do funcionario: ");
+            salario = tc.nextDouble();
+        double salarioMinimo = 1412.00;
+        double divi = salario / salarioMinimo;
+        System.out.println("O salario que o funcionario ganha e de " + salario);
+        System.out.println("esse valor equivale a " + divi + " salarios minimos.");
+    }
+    
+}
