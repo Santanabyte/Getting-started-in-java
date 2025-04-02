@@ -1,0 +1,32 @@
+package javaapplication2;
+
+import java.util.Scanner;
+
+public class JavaApplication2 {
+    
+        public static void main(String[] args) {
+        
+            Scanner tc = new Scanner(System.in);
+            int x;
+            int y;
+            int z;
+            System.out.println("Escolha uma variavel para X: ");
+            x = tc.nextInt();
+            System.out.println("Escolha uma variavel para Y: ");
+            y = tc.nextInt();
+            System.out.println("Escolha uma variavel para Z: ");
+            z = tc.nextInt();
+            
+            
+            System.out.println("Parabens, agora vou trocar essas variaveis de lugar: ");
+            System.out.println("A variavel " + x + " agora vai ser a variavel: " + y);
+            System.out.println("A variavel " + y + " agora vai ser a variavel: " + z);
+            System.out.println("A variavel " + z + " agora vai ser a variavel: " + x);
+            
+            tc.close();
+           
+     
+        
+    }
+    
+}
