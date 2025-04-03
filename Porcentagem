@@ -1,0 +1,20 @@
+package javaapplication5;
+
+import java.util.Scanner;
+
+public class JavaApplication5 {
+
+   
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+        double salario, bonus, total;
+        System.out.println("Digite o salario do funcionario: ");
+        salario = tc.nextDouble();
+        bonus = salario * 0.10;
+        total = salario + bonus;
+        System.out.println("O valor do bonus e: " + bonus);
+        System.out.println("O Valor do salario com o bonus sera: " + total);
+                
+    }
+    
+}
