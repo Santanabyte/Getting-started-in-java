@@ -1,0 +1,39 @@
+package calculo.de.imc;
+
+import java.util.Scanner;
+
+public class CalculoDeImc {
+
+    public static void main(String[] args) {
+            Scanner tc = new Scanner(System.in);
+        System.out.println("Digite o seu nome"
+                       + "(apenas o primeiro)");
+            String nome = tc.next();
+        System.out.println("Ola " + nome + " vamos calcular o seu imc? " );
+        System.out.println("Digite apenas o seu peso: ");
+            double peso = tc.nextDouble();
+        System.out.println("Digite apenas a sua altura:(use virgulas)");
+            double altura = tc.nextDouble();
+        System.out.println("Otimo, as informacoes inseridas estao corretas? \nResponda apenas com (sim ou nao)" );
+            String confirma = tc.next().trim().toLowerCase();
+            //usando apenas o .next() eu leio a primeira palavra da minha frase.
+            //se eu quisesse ler a linha inteira que tivesse mais de uma palvra eu usaria .nextLine()
+            //a variavel .trim() serve para remover os espacos em branco no inicio ou final da string.
+            // a variavel .toLowerCase converte todas as letras da string para minuscula.
+           
+            if(confirma.equals("sim")){
+                System.out.println("Voce escolheu continuar");
+            }else{
+                System.out.println("Volte e tente novamente");
+            return; // Sai do programa se a resposta não for "sim"
+            }   
+                System.out.println("\ncalculando\n");
+                 // o \n serve para dar espaco               
+           
+            double imcfinal = peso / (altura * altura);
+            
+            System.out.println(nome + " o resultado do seu Imc e de " + imcfinal);
+            
+    }
+    
+}
