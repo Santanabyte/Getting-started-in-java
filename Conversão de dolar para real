@@ -15,6 +15,7 @@ public class ConversaoDolar {
             System.out.println("Vamos continuar...");
         }else{
             System.out.println("Tenha um otimo dia.");
+        return;
         }
                 
         System.out.println("Insira o valor em reais para a conversao em dolar: ");
