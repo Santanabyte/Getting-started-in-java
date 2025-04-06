@@ -15,6 +15,7 @@ public class Gasolina {
                 System.out.println("Entao vamos la :)");
         } else {
                 System.out.println("Que pena, tenha um otimo dia.");
+        return;
         }   
         double consumo;
                 System.out.println("Insira o valor do consumo do seu carro: \n(use apenas numeros)");
