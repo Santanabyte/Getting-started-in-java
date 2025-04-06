@@ -1,0 +1,28 @@
+package conversao.dolar;
+
+import java.util.Scanner;
+
+public class ConversaoDolar {
+    public static void main(String[] args) {
+        double dolar;
+        String resposta;
+        Scanner tc = new Scanner(System.in);
+        double cotadolar = 5.85;
+        System.out.println("Cotacao do dolar hoje: 1 dolar = R$" + cotadolar + "reais");
+        System.out.println("Gostaria de converter algum valor de dolar para reais? \n(responda com sim ou nao)");
+        resposta = tc.nextLine();
+        if (resposta.equals("sim")){
+            System.out.println("Vamos continuar...");
+        }else{
+            System.out.println("Tenha um otimo dia.");
+        }
+                
+        System.out.println("Insira o valor em reais para a conversao em dolar: ");
+        dolar = tc.nextDouble();
+        double calculo = ( dolar * cotadolar );
+        System.out.println("O valor de " + dolar + "dolares convertido para real e de: " + calculo);
+        
+
+    }
+    
+}
