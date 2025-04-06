@@ -1,0 +1,24 @@
+package uso.de.boolen;
+
+import java.util.Scanner;
+
+public class UsoDeBoolen {
+    public static void main(String[] args) {
+         System.out.println("Vamos fazer um programa que verifica se numeros inteiros se dividem usando true or false?");
+         Scanner tc = new Scanner(System.in);
+         int num1, num2;
+         System.out.println("Digite o primeiro numero: ");
+         num1 = tc.nextInt();
+         System.out.println("Digite o segundo numero:");
+         num2 = tc.nextInt();
+         System.out.println("Vamos verificar se os numeros dividos darao resultados inteiros? confira abaixo: ");
+         
+         boolean resultado = (num2 != 0) && (num1 / num2 == 0);
+         
+         System.out.println("o resultado e igual a " + resultado);
+        
+        
+        
+    }
+    
+}
