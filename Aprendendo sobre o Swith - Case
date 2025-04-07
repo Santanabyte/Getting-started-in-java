@@ -1,0 +1,70 @@
+package formatardata;
+
+import java.util.Scanner;
+
+public class Formatardata {
+
+    public static void main(String[] args) {
+        int dia, mes, ano;
+        String MesPorExtenso;
+        Scanner tc = new Scanner(System.in);
+        
+        System.out.println("Digite um dia: ");
+        dia = tc.nextInt();
+        System.out.println("Digite um mes: ");
+        mes = tc.nextInt();
+        System.out.println("Digite um ano: ");
+        ano = tc.nextInt();
+        
+        switch(mes){
+            case 1:
+                MesPorExtenso = "Janeiro";
+                break;
+            case 2:
+                MesPorExtenso = "Fevereiro";
+                break;
+            case 3:
+                MesPorExtenso = "Março";
+                break;
+            case 4:
+                MesPorExtenso = "Abril";
+                break;
+            case 5:
+                MesPorExtenso = "Maio";
+                break;
+            case 6:
+                MesPorExtenso = "Junho";
+                break;
+            case 7:
+                MesPorExtenso = "Julho";
+                break;
+            case 8:
+                MesPorExtenso = "Agosto";
+                break;
+            case 9:
+                MesPorExtenso = "Setembro";
+                break;
+            case 10:
+                MesPorExtenso = "Outubro";
+                break;
+            case 11:
+                MesPorExtenso = "Novembro";
+                break;
+            case 12:
+                MesPorExtenso = "Dezembro";
+                break;
+        
+            default:
+                MesPorExtenso = "Mes invalido";
+        }
+               
+                
+        
+        System.out.println(dia + " de " + MesPorExtenso + " de " + ano);
+
+
+
+        tc.close();
+    }
+    
+}
