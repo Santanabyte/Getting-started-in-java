@@ -1,19 +1,18 @@
-package sobrefor;
+package laco.de.repeticao.com.pkgfor;
 
 import java.util.Scanner;
 
-public class Sobrefor {
+public class LacoDeRepeticaoComFor {
 
     public static void main(String[] args) {
-    Scanner tc = new Scanner(System.in);
-        int numero;
-        System.out.println("Digite o seu nome: ");
+        Scanner tc = new Scanner(System.in);
+        System.out.println("Digite um nome: ");
         String nome = tc.nextLine();
-        System.out.println("Digite a quantidade de vezes que o numero sera repetido: ");
-        numero = tc.nextInt();
+        System.out.println("Digite o numero de vezes que voce deseja reproduzir o nome: ");
+        int vezes = tc.nextInt();
         
-        for(int i = 1; i <=numero; i++){
+        for(int i=1; i <= vezes; i++){
             System.out.println(nome);
         }
-     }
- }
+    } 
+}
