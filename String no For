@@ -1,0 +1,19 @@
+package sobrefor;
+
+import java.util.Scanner;
+
+public class Sobrefor {
+
+    public static void main(String[] args) {
+    Scanner tc = new Scanner(System.in);
+        int numero;
+        System.out.println("Digite o seu nome: ");
+        String nome = tc.nextLine();
+        System.out.println("Digite a quantidade de vezes que o numero sera repetido: ");
+        numero = tc.nextInt();
+        
+        for(int i = 1; i <=numero; i++){
+            System.out.println(nome);
+        }
+     }
+ }
