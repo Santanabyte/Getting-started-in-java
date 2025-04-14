@@ -8,8 +8,7 @@ public class ExercicioAula {
         
         while(count < 10){
         
-            System.out.println("eu amo minha mulher");
-        count++;
-        }
+            System.out.println("eu ja te falei " + count++ + " vezes.");
+     }
    }
 }
