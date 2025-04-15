@@ -1,0 +1,47 @@
+package swithcase;
+
+import java.util.Scanner;
+
+public class SwithCase {
+
+    public static void main(String[] args) {
+        double num1, num2;
+        double resultado = 0;
+        String operacao;
+        //devo usar mais o emprego do char.        
+        Scanner tc = new Scanner(System.in);
+        
+        System.out.println("Digite o primeiro numero: ");
+        num1 = tc.nextDouble();
+        System.out.println("Digite o segundo numero: ");
+        num2 = tc.nextDouble();
+                       
+        System.out.println("Digite a operacao basica desejada: ");
+        tc.nextLine();
+        operacao = tc.nextLine();
+        
+        
+        switch(operacao){
+            case "+":
+                resultado = num1 + num2;
+                break;
+            case "-":
+                resultado = num1 - num2;
+                break;
+            case "/":
+                if( num2 == 0){
+                    System.out.println("Use apenas numeros ordinarios.");
+                }else{
+                    System.out.println("");}
+                resultado = num1 / num2;
+                break;
+            case "*":
+                resultado = num1 * num2;
+                break;
+        
+            default:
+                break;
+        }
+        System.out.println("O resultado e " + resultado);
+    }
+}
