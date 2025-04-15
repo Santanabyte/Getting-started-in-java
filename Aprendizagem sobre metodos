@@ -1,0 +1,31 @@
+package metodos;
+
+public class Metodos {
+    public static void mensagem(){
+        System.out.println("Metodos sem parametro e sem retorno");
+    //Metodo sem parametro e sem retorno.
+    }
+    public static void nome(String nome1, String nome2){
+        
+        System.out.println("Nome: " +nome1 + " Sobrenome: " + nome2);
+    //com parametro.       
+    }
+    public static int soma(int numero){ 
+    return numero+100; 
+    //com parametro e com retorno.
+    }
+    public static void main(String[] args) {
+        int num = 444;
+        String nome = "João";
+        String sobrenome = "Costa";
+        mensagem();
+        nome("Gabriel", "Santana");
+        nome(nome, sobrenome);
+        
+        System.out.println("Somando + 100: " + soma(51));
+        System.out.println("Somando + 100: " + soma(90));
+        System.out.println("Somando + 100: " + soma(54));
+        System.out.println("Somando + 100: " + soma(num));
+    }
+}
+    
