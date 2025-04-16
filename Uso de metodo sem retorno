@@ -1,0 +1,19 @@
+package metodosemretorno;
+public class MetodoSemRetorno {
+    public static void tabuada(int numero, int multiplicador){
+        for(int i = 1; i <= multiplicador; i++){
+        int resultado = numero * i; 
+            System.out.println(i + " x " + numero + " = " + resultado);
+            
+        }
+        System.out.println("__________");
+            
+    }
+    public static void main(String[] args) {
+        tabuada(4, 8);
+        tabuada(9, 10);
+        tabuada(29, 8);
+        tabuada(2, 6);
+        
+    }
+}
