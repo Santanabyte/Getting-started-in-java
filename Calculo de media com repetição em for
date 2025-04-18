@@ -1,0 +1,26 @@
+package leitura.e.media.com.pkgfor;
+
+import java.util.Scanner;
+
+public class LeituraEMediaComFor {
+
+    public static void main(String[] args) {
+      Scanner tc = new Scanner(System.in);
+      
+      int contador = 5;
+      int soma_idades= 0;
+      int media_idades= 0;
+      
+      for(int i = 1; i <= contador; i++){
+          System.out.println(i + " - Digite uma idade: ");
+          int numero = tc.nextInt();
+          soma_idades += numero;
+          
+          
+      }
+          media_idades = soma_idades / contador;
+          System.out.println("A media das idades e de: " + media_idades);
+      
+      
+    }
+}   
