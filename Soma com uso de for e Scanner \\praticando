@@ -1,0 +1,21 @@
+package calculo.de.numeros.com.pkgfor;
+
+import java.util.Scanner;
+
+public class CalculoDeNumerosComFor {
+
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+      
+        System.out.println("Escolha um numero de 1 a 13: ");
+        int numero = tc.nextInt();
+        
+        int soma = 0;
+        
+        for(int i = 1; i <= numero; i++){
+        soma += i;
+        
+        }
+        System.out.println("O resultado da soma de 1 a " + numero + " e de: " + soma);
+    }
+}
