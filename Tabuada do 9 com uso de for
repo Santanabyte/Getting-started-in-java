@@ -1,0 +1,22 @@
+package multiplicação.com.pkgfor;
+import java.util.Scanner;
+
+public class MultiplicaçãoComFor {
+
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+        int numero;
+        int tabuada9 = 9;    
+        
+        System.out.println("Escolha um numero de 1 a 9: ");
+        numero = tc.nextInt();
+        
+        for(int i = 1; i <= tabuada9; i++){
+        
+            int multiplicacao = numero * i;
+            
+            
+          System.out.println( numero + " x " + i + " = " + multiplicacao);
+        }
+    }
+}
