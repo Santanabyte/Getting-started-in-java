@@ -1,0 +1,32 @@
+package uso.de.pkgif.pkgelse.dentro.pkgdo.pkgfor;
+
+import java.util.Scanner;
+
+public class UsoDeIfElseDentroDoFor {
+
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+        
+        int maiorDeIdade = 0;
+        int contador = 5;
+        int menorDeIdade = 0; 
+        System.out.println("Escreva a idade de 5 pessoas: ");
+        for(int i = 1; i <= contador; i++){
+            
+        System.out.println("#"+ i + " Escreva a idade: ");
+        int resposta = tc.nextInt();
+        
+        if(resposta >= 18){
+            maiorDeIdade++;
+        }else{
+            menorDeIdade++;
+            
+        }
+
+       }
+        
+            System.out.println(maiorDeIdade + " sao maiores de idade.");
+            System.out.println(menorDeIdade + " sao menores de idade.");
+       
+    }
+}
