@@ -1,0 +1,27 @@
+package numeros.de.pkg1.a.pkg50;
+
+import java.util.Scanner;
+
+public class NumerosDe1A50 {
+
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+        int numero = 0;
+        int idade;
+        int positivo = 0;
+        int negativo = 0;
+        
+            for(int i = 1; i <= 5; i++){
+            System.out.println(i + "# Digite uma idade: ");
+            idade = tc.nextInt();
+        
+            if(idade >= 0 && idade <= 50){
+                positivo++;    
+            }else{
+                negativo++;
+            }
+        }
+                System.out.println(positivo + " estao entre os numeros 0 e 50");
+                System.out.println(negativo + " nao estao entre os numeros 0 e 50");
+        }
+}
