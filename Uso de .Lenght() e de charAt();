@@ -1,0 +1,25 @@
+package pulando.linhas;
+
+import java.util.Scanner;
+
+public class PulandoLinhas {
+
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+
+        System.out.println("Digite uma palavra: ");
+        String palavra = tc.nextLine();
+      
+        for (int i = 0; i < palavra.length(); i++) {
+            System.out.println(palavra.charAt(i));
+        }
+        
+        if (palavra.length() < 10) {
+            System.out.println("A palavra possui menos que 10 letras.");
+        } else if (palavra.length() > 10) {
+            System.out.println("A palavra possui mais que 10 letras.");
+        } else {
+            System.out.println("A palavra possui exatamente 10 letras.");
+        }
+    }
+}
