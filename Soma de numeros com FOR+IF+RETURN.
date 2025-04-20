@@ -1,0 +1,26 @@
+package soma.de.numeros.ordinarios;
+
+import java.util.Scanner;
+
+public class SomaDeNumerosOrdinarios {
+
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+        int numero;
+        int soma = 0;
+        
+        for(int i = 1;i <= 5; i++){ 
+            System.out.println(i +"# Escreva 5 numeros diferente: ");        
+            numero = tc.nextInt();
+            
+            if(numero < 0){
+                System.out.println(numero + " e negativo, programa encerrado, voce usou numeros negativos.");
+                return;
+            }else{
+                soma += numero;
+   }
+  }
+        System.out.println("A soma dos numeros escolhidos e de: " + soma);
+        tc.close();
+ }
+}  
