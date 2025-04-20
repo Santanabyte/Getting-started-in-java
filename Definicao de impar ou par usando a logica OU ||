@@ -1,0 +1,28 @@
+package definicao.de.numero.impar.ou.par.com.uso.de.java;
+
+import java.util.Scanner;
+
+public class DefinicaoDeNumeroImparOuParComUsoDeJava {
+
+    public static void main(String[] args) {
+        Scanner tc = new Scanner(System.in);
+        System.out.println("Digite um numero valido entre 1 e 10");
+        int numero = tc.nextInt();
+        
+        if(numero < 1 || numero > 10){
+            System.out.println("O numero escolhido nao esta entre 1 e 10.");
+        }else{
+            for(int i = 0; i <= numero; i++){
+                if(i % 2 == 0){
+                    System.out.println(i + " e par");
+                }else{
+                    System.out.println(i + " e impar");
+                }                
+            
+            }
+        
+        tc.close();
+        }
+        
+    }
+}
