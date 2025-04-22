@@ -1,0 +1,23 @@
+package arrays;
+
+import java.util.Scanner;
+
+public class Arrays {
+
+    public static void main(String[] args) {
+
+            Scanner tc = new Scanner(System.in);
+            int[] idades = new int[3];
+            
+            for(int i = 0; i<idades.length; i++){
+              System.out.println("Digite a idade " + (i+1)+ ": ");
+              idades[i] = tc.nextInt();
+              }
+              System.out.println("Idades Registradas: ");
+              
+              for(int i = 0; i < idades.length; i++){
+              System.out.println("Posicao: " + i + " Idade: " + idades[i]);
+                                
+        }
+    }
+}
