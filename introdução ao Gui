@@ -1,0 +1,25 @@
+package com.mycompany.gui;
+
+import javax.swing.JOptionPane;
+
+public class Gui {
+
+    public static void main(String[] args) {
+        String dado0 = JOptionPane.showInputDialog("Qual seu nome?");
+        
+        String dado1 = JOptionPane.showInputDialog("Qual curso voce esta fazendo?");
+                
+        String dado2 = JOptionPane.showInputDialog("Quantas horas voce estuda por dia?");
+        
+        int horas_por_dia = Integer.parseInt(dado2);
+        
+        
+        int semana = 7;
+        int horas_por_semana = horas_por_dia * semana;
+        
+        
+        JOptionPane.showMessageDialog(null, "O Aluno " + dado0 + " estuda " + dado1 + ", durante o dia ele estuda cerca de " + dado2 + " horas.");
+        JOptionPane.showMessageDialog(null, "Sendo assim, em uma estimativa " + dado0 + " estuda cerca de " + horas_por_semana + " por semana.");
+     
+   }
+}
