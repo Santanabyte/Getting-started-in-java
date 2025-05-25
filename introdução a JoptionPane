@@ -1,0 +1,20 @@
+package com.mycompany.gui_2;
+
+import javax.swing.JOptionPane;
+
+public class Gui_2 {
+
+    public static void main(String[] args) {
+      
+        String loginCorreto = "Gabriel";
+        String senhaCorreta = "1234";
+
+        String login = JOptionPane.showInputDialog("Digite o Login: ");
+        String senha = JOptionPane.showInputDialog("Digite a senha: ");
+        
+        if(loginCorreto.equalsIgnoreCase(login) && senhaCorreta.equalsIgnoreCase(senha)){
+          JOptionPane.showMessageDialog(null, "Usuario Logado.");
+        }else{
+            JOptionPane.showMessageDialog(null, "Login ou senha Incorretos.");
+        };
+        
